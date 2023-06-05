@@ -60,14 +60,17 @@ const Layout = () => {
       <Profile>
         {/*todo (1) 프로필 꾸미기*/}
         <div>
-          <ProfilePicture src="" alt="프로필 사진" />
+          <ProfilePicture src="https://i.namu.wiki/i/VEgVqhf820_2jryuP-6wn3_jXpODLc0mgkviKYliO_Gc7U6eJ6gGQIKRj275maJK61h8b4BlraJcllP9YRWnYA.webp" alt="프로필 사진" />
         </div>
         <div>
-          <Name>이름</Name>
-          <Description>설명</Description>
+          <Name>김태현</Name>
+          <Description>김태현김태현김태현김태현김태현</Description>
         </div>
       </Profile>
-      <Nav>{/*todo (2) 메뉴 작성*/}</Nav>
+      <Nav>
+        <NavLink to='/'>포스트</NavLink>
+        <NavLink to='/resume'>소개</NavLink>
+      </Nav>
       <Outlet />
     </div>
   );
